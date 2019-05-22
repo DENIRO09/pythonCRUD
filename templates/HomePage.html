@@ -1,0 +1,53 @@
+{% include "header.html" %}
+<link href="{{url_for('static', filename = 'css/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
+{% block body %}
+
+<table>
+<tr><th>
+        <div class="modal-body">
+            <form action="{{ url_for('Houses') }}" >
+                 <img src="{{url_for('static', filename = 'Houses.jpeg' )}}", width="500" , height="300" , align="centre" ></img>
+                <div class="form-group"  >
+                     <button class="btn btn-primary" type="submit" >Hogwart Houses</button>
+                </div></form></div>
+    </th><th>
+             <div class="modal-body">
+            <form action="{{ url_for('Wands') }}" >
+                 <img src="{{url_for('static', filename = 'Wands.jpeg' )}}", width="500" , height="300" , align="centre" ></img>
+                <div class="form-group"  >
+                     <button class="btn btn-primary" type="submit" >Wizard Wands</button>
+                </div></form></div>
+    </th><th>
+         <div class="modal-body">
+            <form action="{{ url_for('Home') }}" >
+                 <img src="{{url_for('static', filename = 'Wizards.jpeg' )}}", width="500" , height="300" , align="centre" ></img>
+                <div class="form-group"  >
+                     <button class="btn btn-primary" type="submit" >Wizard's Information</button>
+                </div>
+            </form></div></th></tr>
+    </table>
+{% endblock %}
+<script type="text/javascript" src="{{url_for('static', filename='js/jquery-3.2.1.min.js') }}"></script>
+<script type="text/javascript" src="{{url_for('static', filename = 'js/bootstrap.js')}}"></script>
+
+<script type="text/javascript" src="{{url_for('static', filename = 'js/bootstrap.min.js')}}"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

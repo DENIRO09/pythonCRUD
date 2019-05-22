@@ -1,0 +1,30 @@
+
+<link href="{{url_for('static', filename = 'css/bootstrap.min.css')}}" rel="stylesheet">
+<body>
+<div class="container">
+    <div class="well text-center">
+        <h1>Our Housing In Hogwarts</h1>
+        <img src="{{url_for('static', filename = 'Houses.jpeg' )}}", width="500" , height="200" , align="centre" ></img>
+    </div>
+    <table class="table table-striped">
+                <tr>
+                    <th>Godric Gryffindor : Lion,Brave</th>
+                    <th><img src="{{url_for('static', filename = 'Gryffindor.jpeg' )}}", width="200" , height="200"  ></img> </th>
+                    <th>Salazer Slytherin : Snake,Cunning</th>
+                    <th><img src="{{url_for('static', filename = 'Slytherin.jpeg' )}}", width="200" , height="200"  ></img> </th>
+
+          </tr><tr>
+
+                     <th>Helga Hufflepuff : Badger,Loyal</th>
+                    <th><img src="{{url_for('static', filename = 'Hufflepuff.jpeg' )}}", width="200" , height="200"  ></img> </th>
+                    <th>Rowena Ravenclaw : Eagle,Wise</th>
+                    <th><img src="{{url_for('static', filename = 'Ravenclaw.jpeg' )}}", width="200" , height="200"  ></img> </th>
+        </tr></table>
+     <div class="modal-body">
+            <form action="{{ url_for('HomePage') }}" >
+                <div class="form-group" , align="right" >
+                     <button class="btn btn-primary" type="submit" >Home Page</button>
+                </div></form></div>
+</div>
+<script type="text/javascript" src="{{url_for('static', filename='js/jquery-3.2.1.min.js') }}"></script>
+<script type="text/javascript" src="{{url_for('static', filename = 'js/bootstrap.min.js')}}"></script>

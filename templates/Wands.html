@@ -1,0 +1,34 @@
+<link href="{{url_for('static', filename = 'css/bootstrap.min.css')}}" rel="stylesheet">
+<body>
+<div class="container">
+    <div class="well text-center">
+        <h1>Our Selection Of Wands</h1>
+        <img src="{{url_for('static', filename = 'Wands.jpeg' )}}", width="500" , height="200" , align="centre" ></img>
+    </div>
+    <table class="table table-striped">
+                <tr>
+                    <th>Alder Wand</th>
+                    <th><img src="{{url_for('static', filename = 'Alder_Wand.jpeg' )}}", width="200" , height="200"  ></img> </th>
+                    <th>Ash Wand</th>
+                    <th><img src="{{url_for('static', filename = 'Ash_Wand.jpeg' )}}", width="200" , height="200"  ></img> </th>
+                    <th>Blackthorn Wand</th>
+                    <th><img src="{{url_for('static', filename = 'Blackthorn_Wand.jpeg' )}}", width="200" , height="200"  ></img> </th>
+          </tr>
+        <tr>
+               <p></p>
+                     <th>Hawthorn Wand</th>
+                    <th><img src="{{url_for('static', filename = 'Hawthorn_Wand.jpeg' )}}", width="200" , height="200"  ></img> </th>
+                    <th>Elm Wand</th>
+                    <th><img src="{{url_for('static', filename = 'Elm_Wand.jpeg' )}}", width="200" , height="200"  ></img> </th>
+                    <th>Phoenix Wand</th>
+                    <th><img src="{{url_for('static', filename = 'Phoenix_Wand.jpeg' )}}", width="200" , height="200"  ></img> </th>
+        </tr>
+        </table>
+     <div class="modal-body">
+            <form action="{{ url_for('HomePage') }}" >
+                <div class="form-group" , align="right" >
+                     <button class="btn btn-primary" type="submit" >Home Page</button>
+                </div>
+            </form></div></div>
+<script type="text/javascript" src="{{url_for('static', filename='js/jquery-3.2.1.min.js') }}"></script>
+<script type="text/javascript" src="{{url_for('static', filename = 'js/bootstrap.min.js')}}"></script>
